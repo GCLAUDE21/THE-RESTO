@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins/Poppins\ Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura/Allura-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/static/Roboto-Light.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+* select:focus, * input:focus {
+  outline: none;
+}
+
+body {
+  background: rgb(41, 41, 41);
+}
+
+p {
+  font-family: "roboto", arial;
+  font-size: 0.9rem;
+  color: rgb(27, 26, 26);
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(228, 228, 228);
+}
+header nav {
+  display: flex;
+  padding: 15px 0px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s ease;
+}
+header nav h4 {
+  font-family: "allura", arial;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+header nav h4:hover {
+  text-decoration: underline;
+  transition: 1s ease;
+}
+header nav ul {
+  display: flex;
+  color: rgb(228, 228, 228);
+  justify-content: space-around;
+  font-family: "roboto", arial;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+header nav ul li {
+  cursor: pointer;
+}
+header nav ul li:hover {
+  text-decoration: underline;
+  transition: 1s ease;
+}
+header nav .barre {
+  width: 70%;
+}
+header nav .reseaux {
+  gap: 10px;
+  font-size: 0.8rem;
+  transition: 0.5s ease;
+}
+header nav .reseaux :hover {
+  transform: scale(1.1);
+}
+header .header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 150px;
+}
+header .header-container h2 {
+  color: rgb(134, 96, 1);
+  font-family: "allura", arial;
+  font-size: 3rem;
+  font-weight: 200;
+}
+header .header-container h1 {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: -30px;
+  font-family: "poppins", arial;
+  letter-spacing: 4px;
+}
+header .header-container .logo-f {
+  padding: 40px 0px 10px;
+}
+header .header-container .logo-f img {
+  height: 50%;
+}
+header .header-container .devise {
+  font-family: "roboto", arial;
+  color: rgba(226, 224, 224, 0.727);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1.4px;
+}
+
+main .discover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 350px;
+}
+main .discover .left-part {
+  background: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+}
+main .discover .left-part .left-part-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border: 0.5px dotted rgb(134, 96, 1);
+  align-items: center;
+}
+main .discover .left-part .left-part-container h4 {
+  font-family: "allura", arial;
+  color: rgb(134, 96, 1);
+  margin-bottom: -8px;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+main .discover .left-part .left-part-container h5 {
+  font-family: "poppins", arial;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+main .discover .left-part .left-part-container .logo-f img {
+  width: 80%;
+}
+main .discover .left-part .left-part-container p {
+  text-align: center;
+  padding: 20px 3px;
+}
+main .discover .left-part .left-part-container .photo {
+  width: 10%;
+  min-width: 30px;
+  max-width: 55px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+  padding-bottom: 10px;
+}
+main .discover .left-part .left-part-container .nom {
+  font-family: "poppins", arial;
+  font-size: 0.8rem;
+  margin-bottom: -3px;
+}
+main .discover .left-part .left-part-container .poste {
+  font-family: "roboto", arial;
+  color: rgb(167, 167, 167);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+main .discover .right-part {
+  background: url(../img/store-01.jpg) center/cover;
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .menu:after {
+  content: "";
+  background: url(../img/bg-menu-01.jpg) center;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 70%;
+}
+main .menu h4 {
+  font-family: "allura", arial;
+  color: rgb(134, 96, 1);
+  font-size: 1.6rem;
+  margin: 30px 0px 20px;
+}
+main .menu .logo-f img {
+  height: 20px;
+}
+main .menu .nav-menu {
+  display: flex;
+  color: rgb(228, 228, 228);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-size: 0.7rem;
+  width: 50%;
+  margin: 25px auto;
+  justify-content: space-around;
+  font-family: "roboto", arial;
+}
+main .menu .carte {
+  background: rgb(228, 228, 228);
+  width: 60%;
+  border-top: 2px solid rgb(161, 105, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 5px;
+  margin-bottom: 50px;
+}
+main .menu .carte .menuli {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+}
+main .menu .carte .menuli .menulicontainer {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dotted rgb(167, 167, 167);
+  padding: 5px 0px 25px;
+  width: 100%;
+}
+main .menu .carte .menuli .menulicontainer img {
+  height: 60px;
+  border-radius: 50px;
+}
+main .menu .carte .menuli .menulicontainer .texte {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+main .menu .carte .menuli .menulicontainer .texte .plat {
+  font-family: "roboto", arial;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: black;
+}
+main .menu .carte .menuli .menulicontainer .texte .ingredients {
+  font-family: "roboto", arial;
+  font-size: 0.7rem;
+  padding: 5px 0px;
+  color: rgb(41, 41, 41);
+}
+main .menu .carte .menuli .menulicontainer .prix {
+  font-family: "roboto", arial;
+  color: rgb(134, 96, 1);
+  margin-left: auto;
+}
+main .book {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  margin: 50px auto;
+  width: 70%;
+  height: 400px;
+}
+main .book .left-part {
+  background: rgb(27, 26, 26);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+main .book .left-part .left-part-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted rgb(167, 167, 167);
+  margin: 15px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+main .book .left-part .left-part-container h4 {
+  font-family: "allura", arial;
+  color: rgb(134, 96, 1);
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+main .book .left-part .left-part-container h5 {
+  font-family: "poppins", arial;
+  text-transform: uppercase;
+  color: rgb(228, 228, 228);
+  font-size: 1rem;
+  margin-top: -33px;
+}
+main .book .left-part .left-part-container .logo-f img {
+  height: 25px;
+  margin-bottom: 10px;
+}
+main .book .left-part .left-part-container .titres {
+  font-family: "roboto", arial;
+  color: rgb(134, 96, 1);
+  font-size: 0.85rem;
+}
+main .book .left-part .left-part-container .heures {
+  font-family: "roboto", arial;
+  color: rgb(228, 228, 228);
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0px 10px;
+}
+main .book .right-part {
+  background: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+main .book .right-part .right-part-container {
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+main .book .right-part .right-part-container h4 {
+  font-family: "allura", arial;
+  color: rgb(134, 96, 1);
+  font-size: 1.4rem;
+}
+main .book .right-part .right-part-container h3 {
+  font-family: "poppins", arial;
+  text-transform: uppercase;
+  color: rgb(27, 26, 26);
+  margin-top: -10px;
+}
+main .book .right-part .right-part-container .logo-f img {
+  height: 25px;
+  margin: 25px 0px 20px;
+}
+main .book .right-part .right-part-container form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+main .book .right-part .right-part-container form .form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+}
+main .book .right-part .right-part-container form .form-container select, main .book .right-part .right-part-container form .form-container input {
+  background: none;
+  border: none;
+  font-family: "roboto", arial;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  padding: 10px 0px;
+  text-align: left;
+}
+main .book .right-part .right-part-container form .form-container :nth-child(4), main .book .right-part .right-part-container form .form-container :nth-child(5), main .book .right-part .right-part-container form .form-container :nth-child(6) {
+  border: none;
+  border-bottom: none;
+}
+main .book .right-part .right-part-container form button {
+  font-family: "roboto", arial;
+  background: rgb(27, 26, 26);
+  color: rgb(228, 228, 228);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
