@@ -381,5 +381,133 @@ main .book .right-part .right-part-container form button {
   letter-spacing: 2px;
   cursor: pointer;
 }
+main .event {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .event h4 {
+  font-family: "allura", arial;
+  color: rgb(134, 96, 1);
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+main .event h3 {
+  font-family: "poppins", arial;
+  text-transform: uppercase;
+  color: rgb(228, 228, 228);
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+main .event .logo-f img {
+  height: 20px;
+  margin-bottom: 20px;
+}
+main .event .event-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
+  gap: 13px;
+  grid-template-areas: "lef1 dr" "lef2 dr";
+  width: 700px;
+  height: 250px;
+  margin: 0 auto;
+}
+main .event .event-container .titre {
+  color: rgb(41, 41, 41);
+}
+main .event .event-container .loc {
+  color: rgb(175, 175, 175);
+  font-size: 0.7rem;
+}
+main .event .event-container .tickets {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: rgb(27, 26, 26);
+}
+main .event .event-container .img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .event .event-container .img .img-container {
+  background: rgb(27, 26, 26);
+  color: rgb(228, 228, 228);
+  height: 50px;
+  width: 50px;
+  font-family: "roboto", arial;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .event .event-container .img .img-container .mois {
+  font-size: 0.6rem;
+}
+main .event .event-container .texte {
+  background: rgb(228, 228, 228);
+  display: flex;
+}
+main .event .event-container .texte .texte-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 12px;
+}
+main .event .event-container .left-part1 {
+  grid-area: lef1;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+main .event .event-container .left-part1 .img {
+  background: url(../img/event-01.jpg) center/cover;
+}
+main .event .event-container .left-part2 {
+  grid-area: lef2;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+main .event .event-container .left-part2 .img {
+  background: url(../img/event-02.jpg) center/cover;
+}
+main .event .event-container .right-part {
+  grid-area: dr;
+  background: url(../img/event-03.jpg) center/cover;
+  display: flex;
+}
+main .event .event-container .right-part .right-part-container {
+  background: rgb(228, 228, 228);
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 20px;
+}
+main .event .event-container .right-part .right-part-container .img {
+  background: rgb(27, 26, 26);
+  color: rgb(228, 228, 228);
+  height: 50px;
+  width: 50px;
+  font-family: "roboto", arial;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+main .event .event-container .right-part .right-part-container .img .mois {
+  font-size: 0.7rem;
+}
+main .event .event-container .right-part .right-part-container .titre {
+  padding: 0px 20px;
+}
+main .event .event-container .right-part .right-part-container .tickets {
+  padding-top: 20px;
+}
 
 /*# sourceMappingURL=index.css.map */

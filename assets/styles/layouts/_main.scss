@@ -319,4 +319,175 @@ main {
         }
     }
 
+    & .event {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h4 {
+        font-family: $font2;
+        color: $gold;
+        font-size: 1.5rem;
+        margin-top: 40px;
+            
+        }
+
+        h3 {
+            font-family: $font1;
+            text-transform: uppercase;
+            color: $white;
+            margin-top: -10px;
+            margin-bottom: 20px;
+
+        }
+
+        .logo-f img {
+            height: 20px;
+            margin-bottom: 20px;
+        }
+
+        .event-container {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr 1fr;
+            gap: 13px;
+            grid-template-areas: 
+            "lef1 dr"
+            "lef2 dr";
+            width: 700px;
+            height: 250px;
+            margin: 0 auto;
+
+             .titre {
+                 color: $black2;
+             }
+
+            .loc {
+                color: rgb(175, 175, 175);
+                font-size: 0.7rem;
+             }
+
+            .tickets {
+                text-transform: uppercase;
+                font-size: 0.6rem;
+                color: $black1;
+             }
+
+            .img {
+
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+
+                    .img-container {
+                        background: $black1;
+                        color: $white;
+                        height: 50px;
+                        width: 50px;
+                        font-family: $font3;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        
+
+                        .mois {
+                            font-size: 0.6rem;
+                        }
+                    }
+            
+            }
+
+            .texte {
+                    background: $white;
+                    display: flex;
+
+                    .texte-container {
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        gap: 12px;
+
+                    }
+                }
+
+            .left-part1 {
+                grid-area: lef1;
+                display: grid;
+                grid-template-columns: 35% 65%;
+
+                .img {
+                    background: url(../img/event-01.jpg) center/cover;
+                    
+                }
+
+            }
+
+            .left-part2 {
+                grid-area: lef2;
+
+                display: grid;
+                grid-template-columns: 35% 65%;
+
+                .img {
+                    background: url(../img/event-02.jpg) center/cover;  
+                   }
+                }
+
+            .right-part {
+                grid-area: dr;
+                background: url(../img/event-03.jpg) center/cover;
+                display: flex;
+
+                .right-part-container {
+                    background: $white;
+                    margin: 15px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 0px 20px;
+
+                    .img {
+                        background: $black1;
+                        color: $white;
+                        height: 50px;
+                        width: 50px;
+                        font-family: $font3;
+                        margin: 0 auto;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+
+
+                        .mois {
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .titre {
+                        padding: 0px 20px;
+                    }
+
+                    .tickets {
+                        padding-top: 20px;
+                    }
+
+                    
+
+                }
+            }
+
+        }
+
+
+    }
+
 }
