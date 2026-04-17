@@ -1,0 +1,77 @@
+@use "../settings" as*;
+
+footer {
+    background: url(../img/bg-footer.jpg) center/cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 180px;
+    margin-top: 100px;
+
+
+    .foot-left {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "vi toto";
+    
+    .footer-left-container {
+        
+        padding: 20px;
+        grid-area: toto;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            color: $gold;
+            font-family: $font2;
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-family: $font3;
+            color: $grey;
+            font-size: 0.6rem;
+            line-height: 20px;
+
+        }
+    }
+
+}
+
+.foot-right {
+    display: flex;
+    align-items: center;
+
+    .foot-right-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-family: $font3;
+        gap: 8px;
+
+        input {
+            background: none;
+            color: rgba(63, 63, 63, 0.735);
+            padding: 3px;
+            border: 1px solid rgba(63, 63, 63, 0.703);
+        }
+
+        .follow {
+            display: flex;
+            gap: 20px;
+            margin-top:30px;
+
+            ul {
+                display: flex;
+                gap: 20px;
+                color: rgba(63, 63, 63, 0.916);
+            }
+        }
+    }
+}
+
+}

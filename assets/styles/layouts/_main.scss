@@ -490,4 +490,56 @@ main {
 
     }
 
+    .devise {
+
+        width: 700px;
+        height: 200px;
+        background: $white;
+        margin: 110px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        text-align: center;
+        gap: 10px;
+        position: relative;
+        margin-bottom: 100px;
+
+
+        &::before {
+            content: "";
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            background: url(../img/avatar-02.jpg) center/cover;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50px;
+
+        }
+
+        &::after {
+            content: "";
+            height: 200px;
+            width: 100vw;
+            z-index: -1;
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            background: url(../img/gmap.jpg) center/cover;
+            transform: translateX(-50%);
+
+        }
+
+        .poste {
+            color: $gold;
+            font-size: 0.7rem;
+            font-weight: 100;
+
+        }
+
+
+    }
+
 }
