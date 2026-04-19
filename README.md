@@ -22,30 +22,21 @@ SCSS/SASS compilé via Dart Sass. HTML natif. Aucun framework CSS externe.
 the-resto-sass/
 ├── index.html
 ├── package.json
-├── assets/
-│   ├── fonts/
-│   │   └── Inter, Merriweather/
-│   ├── img/
-│   │   ├── bg.jpg
-│   │   ├── pic01.jpg
-│   │   ├── pic02.jpg
-│   │   ├── pic03.jpg
-│   │   └── Maquette/
-│   │       ├── maquette-mobile.png
-│   │       └── maquette-desktop.png
-│   └── styles/
-│       ├── index.scss
-│       ├── index.css
-│       ├── _settings.scss
-│       ├── layout/
-│       │   ├── _fonts.scss
-│       │   ├── _navbar.scss
-│       │   ├── _header.scss
-│       │   ├── _main.scss
-│       │   ├── _body.scss
-│       │   └── _contact.scss
-│       └── components/
-│           └── _button.scss
+└── assets/
+    ├── fonts/
+    ├── img/
+    └── styles/
+        ├── index.scss
+        ├── _settings.scss
+        ├── layout/
+        │   ├── _navbar.scss
+        │   ├── _header.scss
+        │   ├── _main.scss
+        │   ├── _body.scss
+        │   ├── _contact.scss
+        │   └── _fonts.scss
+        └── components/
+            └── _button.scss
 \```
 
 ## Auteur
