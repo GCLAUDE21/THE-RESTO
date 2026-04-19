@@ -25,6 +25,10 @@ header {
                 text-decoration: underline;
                 transition: 1s ease;
             }
+
+            @media screen and (max-width: 599px) {
+                       font-size: 2rem;
+                    }
         }
 
         & ul {
@@ -34,6 +38,8 @@ header {
             font-family: $font3;
             font-size: 0.6rem;
             text-transform: uppercase;
+
+            
 
             & li {
                 cursor: pointer;
@@ -46,6 +52,9 @@ header {
 
         & .barre {
             width: 70%;
+            @media screen and (max-width: 599px) {
+                       display: none;
+                    }
         }
 
         & .reseaux {
@@ -55,6 +64,11 @@ header {
             :hover {
                 transform: scale(1.1);
             }
+
+            @media screen and (max-width: 599px) {
+                       font-size: 1rem;
+                       gap: 20px;
+                    }
         }
 
     }
@@ -93,6 +107,13 @@ header {
             text-transform: uppercase;
             font-size: 0.7rem;
             letter-spacing: 1.4px;
+
+            @media screen and (max-width: 599px) {
+                       font-size: 1rem;
+                       padding: 10px 30px;
+                       margin: 0px auto;
+                       text-align: center;
+                    }
         }
     }
 }

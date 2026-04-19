@@ -56,6 +56,11 @@ header nav h4:hover {
   text-decoration: underline;
   transition: 1s ease;
 }
+@media screen and (max-width: 599px) {
+  header nav h4 {
+    font-size: 2rem;
+  }
+}
 header nav ul {
   display: flex;
   color: rgb(228, 228, 228);
@@ -74,6 +79,11 @@ header nav ul li:hover {
 header nav .barre {
   width: 70%;
 }
+@media screen and (max-width: 599px) {
+  header nav .barre {
+    display: none;
+  }
+}
 header nav .reseaux {
   gap: 10px;
   font-size: 0.8rem;
@@ -81,6 +91,12 @@ header nav .reseaux {
 }
 header nav .reseaux :hover {
   transform: scale(1.1);
+}
+@media screen and (max-width: 599px) {
+  header nav .reseaux {
+    font-size: 1rem;
+    gap: 20px;
+  }
 }
 header .header-container {
   display: flex;
@@ -116,11 +132,24 @@ header .header-container .devise {
   font-size: 0.7rem;
   letter-spacing: 1.4px;
 }
+@media screen and (max-width: 599px) {
+  header .header-container .devise {
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin: 0px auto;
+    text-align: center;
+  }
+}
 
 main .discover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 350px;
+}
+@media screen and (max-width: 599px) {
+  main .discover {
+    display: flex;
+  }
 }
 main .discover .left-part {
   background: rgb(228, 228, 228);
@@ -180,6 +209,11 @@ main .discover .left-part .left-part-container .poste {
 main .discover .right-part {
   background: url(../img/store-01.jpg) center/cover;
 }
+@media screen and (max-width: 599px) {
+  main .discover .right-part {
+    display: none;
+  }
+}
 main .menu {
   display: flex;
   flex-direction: column;
@@ -195,6 +229,11 @@ main .menu:after {
   z-index: -1;
   width: 100%;
   height: 70%;
+}
+@media screen and (max-width: 715px) {
+  main .menu:after {
+    height: 50%;
+  }
 }
 main .menu h4 {
   font-family: "allura", arial;
@@ -227,6 +266,19 @@ main .menu .carte {
   justify-content: center;
   padding: 20px 0px 5px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 715px) {
+  main .menu .carte {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+@media screen and (max-width: 599px) {
+  main .menu .carte {
+    font-size: 1rem;
+    width: 80%;
+  }
 }
 main .menu .carte .menuli {
   display: flex;
@@ -273,6 +325,17 @@ main .book {
   width: 70%;
   height: 400px;
 }
+@media screen and (max-width: 850px) {
+  main .book {
+    height: unset;
+  }
+}
+@media screen and (max-width: 850px) {
+  main .book {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main .book .left-part {
   background: rgb(27, 26, 26);
   display: flex;
@@ -288,6 +351,11 @@ main .book .left-part .left-part-container {
   justify-content: space-around;
   width: 100%;
 }
+@media screen and (max-width: 850px) {
+  main .book .left-part .left-part-container {
+    padding-bottom: 20px;
+  }
+}
 main .book .left-part .left-part-container h4 {
   font-family: "allura", arial;
   color: rgb(134, 96, 1);
@@ -301,9 +369,19 @@ main .book .left-part .left-part-container h5 {
   font-size: 1rem;
   margin-top: -33px;
 }
+@media screen and (max-width: 850px) {
+  main .book .left-part .left-part-container h5 {
+    margin-top: -10px;
+  }
+}
 main .book .left-part .left-part-container .logo-f img {
   height: 25px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 850px) {
+  main .book .left-part .left-part-container .logo-f img {
+    margin: 15px auto;
+  }
 }
 main .book .left-part .left-part-container .titres {
   font-family: "roboto", arial;
@@ -317,6 +395,11 @@ main .book .left-part .left-part-container .heures {
   font-size: 0.7rem;
   padding: 0px 10px;
 }
+@media screen and (max-width: 850px) {
+  main .book .left-part .left-part-container .heures {
+    margin-bottom: 20px;
+  }
+}
 main .book .right-part {
   background: rgb(228, 228, 228);
   display: flex;
@@ -329,6 +412,12 @@ main .book .right-part .right-part-container {
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 530px) {
+  main .book .right-part .right-part-container {
+    margin: 30px 0px;
+    width: 80%;
+  }
 }
 main .book .right-part .right-part-container h4 {
   font-family: "allura", arial;
@@ -350,12 +439,24 @@ main .book .right-part .right-part-container form {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 530px) {
+  main .book .right-part .right-part-container form {
+    width: 100%;
+  }
+}
 main .book .right-part .right-part-container form .form-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   padding: 15px;
+}
+@media screen and (max-width: 530px) {
+  main .book .right-part .right-part-container form .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 main .book .right-part .right-part-container form .form-container select, main .book .right-part .right-part-container form .form-container input {
   background: none;
@@ -366,9 +467,11 @@ main .book .right-part .right-part-container form .form-container select, main .
   padding: 10px 0px;
   text-align: left;
 }
-main .book .right-part .right-part-container form .form-container :nth-child(4), main .book .right-part .right-part-container form .form-container :nth-child(5), main .book .right-part .right-part-container form .form-container :nth-child(6) {
-  border: none;
-  border-bottom: none;
+@media screen and (min-width: 530px) {
+  main .book .right-part .right-part-container form .form-container :nth-child(4), main .book .right-part .right-part-container form .form-container :nth-child(5), main .book .right-part .right-part-container form .form-container :nth-child(6) {
+    border: none;
+    border-bottom: none;
+  }
 }
 main .book .right-part .right-part-container form button {
   font-family: "roboto", arial;
@@ -385,6 +488,11 @@ main .event {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+@media screen and (max-width: 850px) {
+  main .event {
+    display: none;
+  }
 }
 main .event h4 {
   font-family: "allura", arial;
@@ -523,6 +631,13 @@ main .devise {
   position: relative;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 850px) {
+  main .devise {
+    width: unset;
+    height: unset;
+    margin: 30px;
+  }
+}
 main .devise::before {
   content: "";
   height: 40px;
@@ -558,10 +673,22 @@ footer {
   height: 180px;
   margin-top: 100px;
 }
+@media screen and (max-width: 550px) {
+  footer {
+    height: unset;
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .foot-left {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-areas: "vi toto";
+}
+@media screen and (max-width: 550px) {
+  footer .foot-left {
+    display: none;
+  }
 }
 footer .foot-left .footer-left-container {
   padding: 20px;
