@@ -18,7 +18,7 @@ SCSS/SASS compilé via Dart Sass. HTML natif. Aucun framework CSS externe.
 
 ## Structure du projet
 
-\```
+`` `
 the-resto-sass/
 ├── index.html
 ├── package.json
@@ -37,7 +37,7 @@ the-resto-sass/
         │   └── _fonts.scss
         └── components/
             └── _button.scss
-\```
+`` `
 
 ## Auteur
 Guillaume CLAUDE — Formation Développeur Web — Avril 2026
