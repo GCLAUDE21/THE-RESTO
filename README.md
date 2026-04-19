@@ -1,8 +1,7 @@
 # THE RESTO - SASS
 Projet de mise en page réalisé dans le cadre de ma formation Développeur Web.
 
-Demo live
-__Voir la page__
+Demo live : [Voir la page](https://gclaude21.github.io/THE-RESTO/)
 
 ## Objectif
 Créer une landing page thématique restaurant en intégrant SASS/SCSS avec une architecture de fichiers structurée.
